@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciclopedia JavaScript</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/sintaxis.css">
+    <link rel="icon" href="/image/jslogo.png">
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <img src="/image/logo3.png" alt="JavaScript Logo" class="logo mb-3">
+            <h1 class="display-4">Enciclopedia JavaScript</h1>
+            <p class="lead">Aprende los fundamentos de JavaScript desde cero</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <i class="fab fa-js-square me-2"></i>JS Encyclopedia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html"><i class="fas fa-home me-1"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/introduccion.html"><i class="fas fa-play me-1"></i> Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/sintaxis.html"><i class="fas fa-code me-1"></i> Sintaxis básica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/tipos-datos.html"><i class="fas fa-cubes me-1"></i> Tipos de datos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/variables.html"><i class="fas fa-tag me-1"></i> Variables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/operadores.html"><i class="fas fa-calculator me-1"></i> Operadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/condicionales.html"><i class="fas fa-random me-1"></i> Condicionales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/bucles.html"><i class="fas fa-redo me-1"></i> Bucles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/funciones.html"><i class="fas fa-project-diagram me-1"></i> Funciones</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <section class="mb-5">
+                    <h2 class="mb-4"><i class="fas fa-star me-2"></i>Bienvenido</h2>
+                    <p>Esta enciclopedia está diseñada para ayudarte a aprender los conceptos fundamentales de JavaScript de manera clara y práctica.</p>
+                    <p>Cada tema incluye explicaciones detalladas, ejemplos de código y ejercicios para practicar.</p>
+                    
+                    <div class="alert alert-info mt-4">
+                        <h4><i class="fas fa-lightbulb me-2"></i>¿Por qué aprender JavaScript?</h4>
+                        <ul>
+                            <li>Es el lenguaje de programación más popular del mundo</li>
+                            <li>Esencial para desarrollo web frontend</li>
+                            <li>También se usa en backend (Node.js), móviles y más</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="mb-4"><i class="fas fa-list-ul me-2"></i>Temas disponibles</h2>
+                    <div class="row">
+                        <!-- Tarjeta 1 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-play me-2"></i>Introducción</h5>
+                                    <p class="card-text">Conoce qué es JavaScript, su historia y cómo funciona.</p>
+                                    <a href="/pages/introduccion.html" class="btn btn-primary">Aprender</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 2 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-code me-2"></i>Sintaxis básica</h5>
+                                    <p class="card-text">Aprende la estructura básica del código JavaScript.</p>
+                                    <a href="/pages/sintaxis.html" class="btn btn-primary">Aprender</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 3 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-cubes me-2"></i>Tipos de datos</h5>
+                                    <p class="card-text">Conoce los diferentes tipos de datos en JavaScript.</p>
+                                    <a href="/pages/tipos-datos.html" class="btn btn-primary">Aprender</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 4 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-tag me-2"></i>Variables</h5>
+                                    <p class="card-text">Aprende a declarar y usar variables en JavaScript.</p>
+                                    <a href="/pages/variables.html" class="btn btn-primary">Aprender</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 5 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-calculator me-2"></i>Operadores</h5>
+                                    <p class="card-text">Domina los operadores aritméticos, lógicos y de comparación.</p>
+                                    <a href="/pages/operadores.html" class="btn btn-primary">Aprender</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 6 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-random me-2"></i>Condicionales</h5>
+                                    <p class="card-text">Aprende a controlar el flujo de tu programa con if, else y switch.</p>
+                                    <a href="/pages/condicionales.html" class="btn btn-primary">Aprender</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 7 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-redo me-2"></i>Bucles</h5>
+                                    <p class="card-text">Aprende a repetir acciones con for, while y do...while.</p>
+                                    <a href="/pages/bucles.html" class="btn btn-primary">Aprender</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 8 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-project-diagram me-2"></i>Funciones</h5>
+                                    <p class="card-text">Aprende a crear y usar funciones en JavaScript.</p>
+                                    <a href="/pages/funciones.html" class="btn btn-primary">Aprender</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Acerca de</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Esta enciclopedia fue creada como proyecto educativo para aprender los fundamentos de JavaScript.</p>
+                        <p>Contiene 8 temas esenciales con ejemplos prácticos.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="fas fa-code me-2"></i>Ejemplo de código</h5>
+                    </div>
+                    <div class="card-body">
+                        <pre><code class="language-javascript">// Función simple en JavaScript
+function saludar(nombre) {
+    return "Hola, " + nombre + "!";
+}
+
+// Llamada a la función
+console.log(saludar("Mundo"));</code></pre>
+                        <p class="mt-2">Este código muestra cómo crear y llamar una función básica en JavaScript.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="fas fa-link me-2"></i>Recursos útiles</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt me-2"></i>MDN JavaScript
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://javascript.info/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt me-2"></i>JavaScript.info
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://es.javascript.info/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt me-2"></i>JavaScript.info (ES)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-book me-2"></i>Enciclopedia JavaScript</h5>
+                    <p>Proyecto educativo para aprender los fundamentos de JavaScript.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="text-white">Inicio</a></li>
+                        <li><a href="/pages/introduccion.html" class="text-white">Temas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> zlopez-2023241@kinal.edu.gt</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">© 2025 Enciclopedia JavaScript. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

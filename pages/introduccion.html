@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript | Enciclopedia JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/sintaxis.css">
+    <link rel="icon" href="/image/jslogo.png">
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <h1 class="display-5">Introducción a JavaScript</h1>
+            <p class="lead mb-0">Conoce los fundamentos del lenguaje</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <i class="fab fa-js-square me-2"></i>JS Encyclopedia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html"><i class="fas fa-home me-1"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-book me-1"></i> Temas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="introduccion.html">Introducción</a></li>
+                            <li><a class="dropdown-item" href="sintaxis.html">Sintaxis básica</a></li>
+                            <li><a class="dropdown-item" href="tipos-datos.html">Tipos de datos</a></li>
+                            <li><a class="dropdown-item" href="variables.html">Variables</a></li>
+                            <li><a class="dropdown-item" href="operadores.html">Operadores</a></li>
+                            <li><a class="dropdown-item" href="condicionales.html">Condicionales</a></li>
+                            <li><a class="dropdown-item" href="bucles.html">Bucles</a></li>
+                            <li><a class="dropdown-item" href="funciones.html">Funciones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." id="searchInput">
+                    <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <article>
+                    <nav aria-label="breadcrumb" class="mb-4">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Introducción</li>
+                        </ol>
+                    </nav>
+                    
+                    <section class="mb-5">
+                        <h2 class="mb-4"><i class="fas fa-play-circle me-2"></i>¿Qué es JavaScript?</h2>
+                        <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+                        
+                        <div class="card my-4">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0"><i class="fas fa-lightbulb me-2"></i>Dato clave</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>JavaScript no tiene relación con Java, a pesar del nombre. El nombre fue una decisión de marketing cuando se lanzó.</p>
+                            </div>
+                        </div>
+                        
+                        <p>JavaScript se utiliza principalmente del lado del cliente (frontend), implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas.</p>
+                    </section>
+                    
+                    <section class="mb-5">
+                        <h2 class="mb-4"><i class="fas fa-history me-2"></i>Historia de JavaScript</h2>
+                        <p>JavaScript fue creado en 1995 por <strong>Brendan Eich</strong> mientras trabajaba en Netscape Communications Corporation. Fue desarrollado en solo 10 días bajo el nombre de Mocha, luego LiveScript, y finalmente JavaScript.</p>
+                        
+                        <div class="table-responsive my-4">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Año</th>
+                                        <th>Hito</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1995</td>
+                                        <td>Nace JavaScript en Netscape</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1997</td>
+                                        <td>Se estandariza como ECMAScript</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2005</td>
+                                        <td>AJAX populariza JavaScript</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2009</td>
+                                        <td>Node.js permite JS en el servidor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015</td>
+                                        <td>ES6 (gran actualización del lenguaje)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    
+                    <section class="mb-5">
+                        <h2 class="mb-4"><i class="fas fa-cogs me-2"></i>¿Cómo funciona JavaScript?</h2>
+                        <p>JavaScript es un lenguaje interpretado que se ejecuta en el navegador del usuario. Cuando una página web carga, el navegador:</p>
+                        
+                        <ol>
+                            <li>Descarga el código JavaScript</li>
+                            <li>Lo analiza (parsing)</li>
+                            <li>Lo compila Just-In-Time (JIT)</li>
+                            <li>Lo ejecuta</li>
+                        </ol>
+                        
+                        <div class="card my-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i>Importante</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>JavaScript es single-threaded, lo que significa que solo puede ejecutar una operación a la vez. Sin embargo, usa un modelo asíncrono y no bloqueante con el event loop.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="mb-5">
+                        <h2 class="mb-4"><i class="fas fa-code me-2"></i>Tu primer código JavaScript</h2>
+                        <p>El clásico "Hola Mundo" en JavaScript se puede escribir de varias formas:</p>
+                        
+                        <pre><code class="language-javascript">// Opción 1: Mostrar en consola
+console.log("Hola Mundo");
+
+// Opción 2: Mostrar en el documento
+document.write("Hola Mundo");
+
+// Opción 3: Mostrar en un alert
+alert("Hola Mundo");</code></pre>
+                        
+                        <div class="alert alert-success mt-4">
+                            <h5><i class="fas fa-check-circle me-2"></i>Práctica recomendada</h5>
+                            <p>Para desarrollo moderno, la mejor opción es <code>console.log()</code> para depuración y manipulación del DOM para mostrar contenido al usuario.</p>
+                        </div>
+                    </section>
+                    
+                    <section class="mb-5">
+                        <h2 class="mb-4"><i class="fas fa-question-circle me-2"></i>¿Dónde se usa JavaScript hoy?</h2>
+                        <p>JavaScript ha evolucionado mucho desde sus inicios y ahora se usa en:</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-globe me-2"></i>Frontend Web</h5>
+                                        <p class="card-text">Frameworks como React, Angular y Vue.js</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-server me-2"></i>Backend</h5>
+                                        <p class="card-text">Con Node.js, Express, NestJS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-mobile-alt me-2"></i>Aplicaciones móviles</h5>
+                                        <p class="card-text">React Native, Ionic, NativeScript</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-desktop me-2"></i>Aplicaciones de escritorio</h5>
+                                        <p class="card-text">Electron, NW.js</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="/pages/index.html" class="btn btn-outline-primary">
+                            <i class="fas fa-arrow-left me-1"></i> Volver al inicio
+                        </a>
+                        <a href="sintaxis.html" class="btn btn-primary">
+                            Siguiente tema: Sintaxis básica <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="fas fa-list-ul me-2"></i>En este tema</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#que-es">¿Qué es JavaScript?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#historia">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#como-funciona">¿Cómo funciona?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#primer-codigo">Primer código</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#usos-actuales">Usos actuales</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="fas fa-chart-line me-2"></i>Datos interesantes</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>10 días</strong> para crear el primer prototipo
+                            </li>
+                            <li class="list-group-item">
+                                <strong>#1</strong> lenguaje más usado en GitHub
+                            </li>
+                            <li class="list-group-item">
+                                <strong>97%</strong> de sitios web lo usan en frontend
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="fas fa-bookmark me-2"></i>Recursos adicionales</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                                    <i class="fas fa-external-link-alt me-2"></i>MDN JavaScript Guide
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">
+                                    <i class="fas fa-external-link-alt me-2"></i>Historia en Wikipedia
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank">
+                                    <i class="fas fa-external-link-alt me-2"></i>Estándar ECMAScript
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-book me-2"></i>Enciclopedia JavaScript</h5>
+                    <p>Proyecto educativo para aprender los fundamentos de JavaScript.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="text-white">Inicio</a></li>
+                        <li><a href="introduccion.html" class="text-white">Temas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> zlopez-2023241@kinal.edu.gt</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">© 2025 Enciclopedia JavaScript. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
