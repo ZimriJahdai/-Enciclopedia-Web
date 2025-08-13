@@ -132,4 +132,21 @@ footer a:hover {
     header p {
         font-size: 1rem;
     }
+
+    pre {
+            background-color: #1e1e1e;
+            /* Fondo oscuro */
+            color: #ffcc00;
+            /* Texto amarillo */
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: "Fira Code", monospace;
+            font-size: 0.95rem;
+        }
+
+        code {
+            color: inherit;
+        }
 }
+
