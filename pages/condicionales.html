@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="icon" href="../image/jslogo.png">
-
-
 </head>
 
 <body>
-    <!-- HEADER -->
+    
     <header class="bg-success text-white py-4 shadow">
         <div class="container text-center">
             <h1 class="display-5 fw-bold"><i class="fas fa-random me-2"></i>Condicionales en JavaScript</h1>
@@ -22,7 +20,7 @@
         </div>
     </header>
 
-    <!-- NAVBAR -->
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
@@ -56,7 +54,7 @@
         </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
+    <!-- Main -->
     <main class="container my-5">
         <section class="mb-5">
             <h2 class="text-success fw-bold">¿Qué son las condicionales?</h2>
@@ -65,7 +63,6 @@
                 el código sea más flexible y responda a diferentes situaciones.</p>
         </section>
 
-        
         <section class="mb-5">
             <h3 class="text-primary"><i class="fas fa-terminal me-2"></i>Ejemplo de declaraciones</h3>
             <pre><code>
@@ -73,7 +70,12 @@
 let x = 5;  // Declaración de variable
 console.log(x);  // Llamada a función
 x++;  // Operación
-</code></pre>
+            </code></pre>
+            <p>En este ejemplo, primero declaramos una variable <code>x</code> con valor <code>5</code>. Luego, usamos
+                <code>console.log()</code> para mostrar su valor en consola. Finalmente, con <code>x++</code>
+                incrementamos
+                su valor en 1, dejándolo en <code>6</code>.
+            </p>
         </section>
 
         <section class="mb-5">
@@ -87,7 +89,9 @@ if (edad >= 18) {
 } else {
     console.log("Eres menor de edad");
 }
-</code></pre>
+            </code></pre>
+            <p>Este condicional evalúa si la variable <code>edad</code> es mayor o igual a 18. Si es así, muestra
+                "Eres mayor de edad". Si no, muestra "Eres menor de edad".</p>
         </section>
 
         <section class="mb-5">
@@ -102,7 +106,10 @@ if (nota >= 90) {
 } else {
     console.log("Reprobado");
 }
-</code></pre>
+            </code></pre>
+            <p>En este caso, evaluamos una nota. Si es mayor o igual a 90, el mensaje será "Excelente". Si está entre 70
+                y 89,
+                dirá "Aprobado". En cualquier otro caso, mostrará "Reprobado".</p>
         </section>
 
         <section class="mb-5">
@@ -111,7 +118,9 @@ if (nota >= 90) {
 let hora = 20;
 let saludo = (hora < 18) ? "Buenas tardes" : "Buenas noches";
 console.log(saludo);
-</code></pre>
+            </code></pre>
+            <p>El operador ternario es una forma corta de escribir un <code>if/else</code>. Aquí, si <code>hora</code>
+                es menor que 18, <code>saludo</code> será "Buenas tardes". Si no, será "Buenas noches".</p>
         </section>
 
         <section class="mb-5">
@@ -132,17 +141,21 @@ switch (dia) {
     default:
         console.log("Día no válido");
 }
-</code></pre>
+            </code></pre>
+            <p>La estructura <code>switch</code> evalúa el valor de la variable <code>dia</code> y ejecuta el bloque que
+                coincida. Si <code>dia</code> es 3, mostrará "Miércoles". Si no coincide con ningún caso, ejecutará
+                <code>default</code>, mostrando "Día no válido".
+            </p>
         </section>
     </main>
 
-    <!-- footer -->
+    
     <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p class="mb-0">&copy; 2025 JS Encyclopedia | Desarrollado con <i class="fas fa-heart text-danger"></i> y
+        <p class="mb-0">&copy; 2025 JS Encyclopedia | Desarrollado<i class=></i> y
             JavaScript</p>
     </footer>
 
-    <!-- scrips -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>

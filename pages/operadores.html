@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../style/main.css">
     <link rel="icon" href="../image/jslogo.png">
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -29,15 +31,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="introduccion.html"><i class="fas fa-play me-1"></i> Introducción</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sintaxis.html"><i class="fas fa-code me-1"></i> Sintaxis básica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tipos-datos.html"><i class="fas fa-cubes me-1"></i> Tipos de datos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="variables.html"><i class="fas fa-tag me-1"></i> Variables</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="operadores.html"><i class="fas fa-calculator me-1"></i> Operadores</a></li>
-                    <li class="nav-item"><a class="nav-link" href="condicionales.html"><i class="fas fa-random me-1"></i> Condicionales</a></li>
-                    <li class="nav-item"><a class="nav-link" href="bucles.html"><i class="fas fa-redo me-1"></i> Bucles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="funciones.html"><i class="fas fa-project-diagram me-1"></i> Funciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i>
+                            Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="introduccion.html"><i class="fas fa-play me-1"></i>
+                            Introducción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sintaxis.html"><i class="fas fa-code me-1"></i>
+                            Sintaxis básica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tipos-datos.html"><i class="fas fa-cubes me-1"></i>
+                            Tipos de datos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="variables.html"><i class="fas fa-tag me-1"></i>
+                            Variables</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="operadores.html"><i
+                                class="fas fa-calculator me-1"></i> Operadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="condicionales.html"><i
+                                class="fas fa-random me-1"></i> Condicionales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bucles.html"><i class="fas fa-redo me-1"></i>
+                            Bucles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="funciones.html"><i
+                                class="fas fa-project-diagram me-1"></i> Funciones</a></li>
                 </ul>
             </div>
         </div>
@@ -45,13 +56,14 @@
 
     <!-- Contenido principal -->
     <main class="container my-5">
-        
-       
+
+
         <section class="mb-5">
-            <p>En JavaScript, los operadores son símbolos especiales que se utilizan para realizar operaciones sobre valores y variables. Se dividen en varias categorías, como aritméticos, de comparación y lógicos.</p>
+            <p>En JavaScript, los operadores son símbolos especiales que se utilizan para realizar operaciones sobre
+                valores y variables. Se dividen en varias categorías, como aritméticos, de comparación y lógicos.</p>
         </section>
 
-        <!-- Operadores Aritméticos -->
+
         <section class="mb-5">
             <h2><i class="fas fa-plus-circle me-2"></i> Operadores Aritméticos</h2>
             <p>Se usan para realizar cálculos matemáticos.</p>
@@ -65,11 +77,36 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>+</td><td>Suma</td><td>5 + 3</td><td>8</td></tr>
-                    <tr><td>-</td><td>Resta</td><td>5 - 3</td><td>2</td></tr>
-                    <tr><td>*</td><td>Multiplicación</td><td>5 * 3</td><td>15</td></tr>
-                    <tr><td>/</td><td>División</td><td>6 / 3</td><td>2</td></tr>
-                    <tr><td>%</td><td>Módulo (resto)</td><td>5 % 2</td><td>1</td></tr>
+                    <tr>
+                        <td>+</td>
+                        <td>Suma</td>
+                        <td>5 + 3</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Resta</td>
+                        <td>5 - 3</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Multiplicación</td>
+                        <td>5 * 3</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>División</td>
+                        <td>6 / 3</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Módulo (resto)</td>
+                        <td>5 % 2</td>
+                        <td>1</td>
+                    </tr>
                 </tbody>
             </table>
             <pre><code class="language-javascript">let a = 10;
@@ -79,7 +116,7 @@ console.log(a % b); // 0
 </code></pre>
         </section>
 
-        <!-- Operadores de Comparación -->
+
         <section class="mb-5">
             <h2><i class="fas fa-equals me-2"></i> Operadores de Comparación</h2>
             <p>Comparan dos valores y devuelven un valor booleano (<code>true</code> o <code>false</code>).</p>
@@ -93,16 +130,41 @@ console.log(a % b); // 0
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>==</td><td>Igualdad</td><td>5 == '5'</td><td>true</td></tr>
-                    <tr><td>===</td><td>Igualdad estricta</td><td>5 === '5'</td><td>false</td></tr>
-                    <tr><td>!=</td><td>Diferente</td><td>5 != '5'</td><td>false</td></tr>
-                    <tr><td>!==</td><td>Diferente estricto</td><td>5 !== '5'</td><td>true</td></tr>
-                    <tr><td>&gt;</td><td>Mayor que</td><td>8 &gt; 5</td><td>true</td></tr>
+                    <tr>
+                        <td>==</td>
+                        <td>Igualdad</td>
+                        <td>5 == '5'</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>===</td>
+                        <td>Igualdad estricta</td>
+                        <td>5 === '5'</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>Diferente</td>
+                        <td>5 != '5'</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>!==</td>
+                        <td>Diferente estricto</td>
+                        <td>5 !== '5'</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>Mayor que</td>
+                        <td>8 &gt; 5</td>
+                        <td>true</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- Operadores Lógicos -->
+
         <section>
             <h2><i class="fas fa-code-branch me-2"></i> Operadores Lógicos</h2>
             <p>Permiten combinar condiciones lógicas.</p>
@@ -127,4 +189,5 @@ console.log(!licencia); // false
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

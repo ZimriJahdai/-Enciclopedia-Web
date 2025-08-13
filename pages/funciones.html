@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funciones | Enciclopedia JS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../style/main.css">
     <link rel="icon" href="../image/jslogo.png">
+    <link rel="stylesheet" href="../style/main.css">
+
 </head>
+
 <body>
-    <header class="bg-primary text-white py-4">
+
+    <header class="py-4">
         <div class="container text-center">
-            <h1 class="display-5">Funciones</h1>
+            <h1 class="display-5 fw-bold">Funciones</h1>
             <p class="lead mb-0">Aprende a crear, usar y optimizar funciones en JavaScript</p>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
                 <i class="fab fa-js-square me-2"></i>JS Encyclopedia
@@ -27,101 +32,139 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="introduccion.html"><i class="fas fa-play me-1"></i> Introducción</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sintaxis.html"><i class="fas fa-code me-1"></i> Sintaxis básica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tipos-datos.html"><i class="fas fa-cubes me-1"></i> Tipos de datos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="variables.html"><i class="fas fa-tag me-1"></i> Variables</a></li>
-                    <li class="nav-item"><a class="nav-link" href="operadores.html"><i class="fas fa-calculator me-1"></i> Operadores</a></li>
-                    <li class="nav-item"><a class="nav-link" href="condicionales.html"><i class="fas fa-random me-1"></i> Condicionales</a></li>
-                    <li class="nav-item"><a class="nav-link" href="bucles.html"><i class="fas fa-redo me-1"></i> Bucles</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="funciones.html"><i class="fas fa-project-diagram me-1"></i> Funciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i
+                                class="fas fa-home me-1"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="introduccion.html"><i
+                                class="fas fa-play me-1"></i>Introducción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sintaxis.html"><i
+                                class="fas fa-code me-1"></i>Sintaxis básica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tipos-datos.html"><i
+                                class="fas fa-cubes me-1"></i>Tipos de datos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="variables.html"><i
+                                class="fas fa-tag me-1"></i>Variables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="operadores.html"><i
+                                class="fas fa-calculator me-1"></i>Operadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="condicionales.html"><i
+                                class="fas fa-random me-1"></i>Condicionales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bucles.html"><i
+                                class="fas fa-redo me-1"></i>Bucles</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="funciones.html"><i
+                                class="fas fa-project-diagram me-1"></i>Funciones</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Contenido principal -->
     <main class="container my-5">
         <section>
-            <h2>Funciones en JavaScript</h2>
-            <p>Las funciones son bloques de código reutilizables que ejecutan una tarea específica. Permiten organizar mejor el código, evitar repeticiones y hacerlo más legible.</p>
+            <h2 class="mb-4">Funciones en JavaScript</h2>
+            <p class="mb-5">Las funciones son bloques de código reutilizables que ejecutan una tarea específica.
+                Permiten organizar mejor el código, evitar repeticiones y hacerlo más legible.</p>
 
-            <h3>1. Función Declarada</h3>
-            <p>Son las funciones definidas con la palabra clave <code>function</code> y pueden ser llamadas antes de su definición debido al "hoisting".</p>
-<pre><code class="language-javascript">// Ejemplo de función declarada
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <h3>1. Función Declarada</h3>
+                        <p>Definidas con <code>function</code> y pueden llamarse antes de su definición gracias al
+                            hoisting.</p>
+                        <pre><code>// Ejemplo de función declarada
 function saludar(nombre) {
     return "Hola, " + nombre + "!";
 }
-console.log(saludar("Juan"));
-</code></pre>
+console.log(saludar("Juan"));</code></pre>
+                    </div>
+                </div>
 
-            <h3>2. Función Expresada</h3>
-            <p>Se asigna una función a una variable. No se pueden usar antes de ser definidas.</p>
-<pre><code class="language-javascript">// Ejemplo de función expresada
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <h3>2. Función Expresada</h3>
+                        <p>Asignadas a una variable. No pueden usarse antes de definirse.</p>
+                        <pre><code>// Ejemplo de función expresada
 const sumar = function(a, b) {
     return a + b;
 };
-console.log(sumar(5, 3));
-</code></pre>
+console.log(sumar(5, 3));</code></pre>
+                    </div>
+                </div>
 
-            <h3>3. Función de Flecha</h3>
-            <p>Más compactas y no vinculan su propio <code>this</code>. Son útiles para callbacks y funciones cortas.</p>
-<pre><code class="language-javascript">// Ejemplo de función de flecha
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <h3>3. Función de Flecha</h3>
+                        <p>Más compactas y sin su propio <code>this</code>. Útiles para callbacks.</p>
+                        <pre><code>// Ejemplo de función de flecha
 const multiplicar = (a, b) => a * b;
-console.log(multiplicar(4, 2));
-</code></pre>
+console.log(multiplicar(4, 2));</code></pre>
+                    </div>
+                </div>
 
-            <h3>4. Parámetros por Defecto</h3>
-            <p>Permiten asignar un valor por defecto si el argumento no se proporciona.</p>
-<pre><code class="language-javascript">
-function saludarPorDefecto(nombre = "Visitante") {
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <h3>4. Parámetros por Defecto</h3>
+                        <p>Permiten un valor por defecto si no se pasa argumento.</p>
+                        <pre><code>function saludarPorDefecto(nombre = "Visitante") {
     return "Hola, " + nombre + "!";
 }
-console.log(saludarPorDefecto());
-</code></pre>
+console.log(saludarPorDefecto());</code></pre>
+                    </div>
+                </div>
 
-            <h3>5. Funciones Anónimas</h3>
-            <p>Son funciones sin nombre, usadas frecuentemente como argumentos de otras funciones.</p>
-<pre><code class="language-javascript">
-setTimeout(function() {
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <h3>5. Funciones Anónimas</h3>
+                        <p>Sin nombre, usadas como argumentos de otras funciones.</p>
+                        <pre><code>setTimeout(function() {
     console.log("Esto se ejecuta después de 2 segundos");
-}, 2000);
-</code></pre>
+}, 2000);</code></pre>
+                    </div>
+                </div>
 
-            <h3>6. Funciones como Argumentos</h3>
-            <p>En JavaScript las funciones son <i>ciudadanos de primera clase</i>, lo que significa que pueden ser pasadas como parámetros.</p>
-<pre><code class="language-javascript">
-function operar(a, b, operacion) {
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <h3>6. Funciones como Argumentos</h3>
+                        <p>Las funciones pueden pasarse como parámetros.</p>
+                        <pre><code>function operar(a, b, operacion) {
     return operacion(a, b);
 }
-console.log(operar(5, 3, (x, y) => x - y));
-</code></pre>
+console.log(operar(5, 3, (x, y) => x - y));</code></pre>
+                    </div>
+                </div>
 
-            <h3>7. Funciones Autoejecutables (IIFE)</h3>
-            <p>Se ejecutan inmediatamente después de su creación.</p>
-<pre><code class="language-javascript">
-(function() {
+                <div class="col-md-12">
+                    <div class="card p-3">
+                        <h3>7. Funciones Autoejecutables (IIFE)</h3>
+                        <p>Se ejecutan inmediatamente tras su creación.</p>
+                        <pre><code>(function() {
     console.log("Soy una función autoejecutable");
-})();
-</code></pre>
+})();</code></pre>
+                    </div>
+                </div>
+            </div>
         </section>
 
+
         <div class="alert alert-info mt-4">
-            <strong>Consejo:</strong> Divide tu código en funciones pequeñas y específicas para mejorar su mantenimiento y evitar errores.
+            <strong>Consejo:</strong> Divide tu código en funciones pequeñas y específicas para mejorar su mantenimiento
+            y evitar errores.
         </div>
 
+
         <div class="d-flex justify-content-between mt-5">
-            <a href="bucles.html" class="btn btn-outline-primary"><i class="fas fa-arrow-left me-1"></i> Volver a Bucles</a>
-            <a href="../index.html" class="btn btn-primary">Volver al inicio <i class="fas fa-arrow-right ms-1"></i></a>
+            <a href="bucles.html" class="btn btn-outline-dark"><i class="fas fa-arrow-left me-1"></i> Volver a
+                Bucles</a>
+            <a href="../index.html" class="btn btn-dark">Volver al inicio <i class="fas fa-arrow-right ms-1"></i></a>
         </div>
     </main>
 
-    <footer class="bg-dark text-white py-4 mt-5">
+
+    <footer class="py-4 mt-5">
         <div class="container text-center">
-            <p>© 2025 Enciclopedia JavaScript. Todos los derechos reservados.</p>
+            <p class="mb-0">© 2025 Enciclopedia JavaScript. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="icon" href="../image/jslogo.png">
-   
+
 </head>
+
 <body>
     <header class="bg-primary text-white py-4">
         <div class="container text-center">
@@ -28,15 +30,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="introduccion.html"><i class="fas fa-play me-1"></i> Introducción</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sintaxis.html"><i class="fas fa-code me-1"></i> Sintaxis básica</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="tipos-datos.html"><i class="fas fa-cubes me-1"></i> Tipos de datos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="variables.html"><i class="fas fa-tag me-1"></i> Variables</a></li>
-                    <li class="nav-item"><a class="nav-link" href="operadores.html"><i class="fas fa-calculator me-1"></i> Operadores</a></li>
-                    <li class="nav-item"><a class="nav-link" href="condicionales.html"><i class="fas fa-random me-1"></i> Condicionales</a></li>
-                    <li class="nav-item"><a class="nav-link" href="bucles.html"><i class="fas fa-redo me-1"></i> Bucles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="funciones.html"><i class="fas fa-project-diagram me-1"></i> Funciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i>
+                            Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="introduccion.html"><i class="fas fa-play me-1"></i>
+                            Introducción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sintaxis.html"><i class="fas fa-code me-1"></i>
+                            Sintaxis básica</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tipos-datos.html"><i
+                                class="fas fa-cubes me-1"></i> Tipos de datos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="variables.html"><i class="fas fa-tag me-1"></i>
+                            Variables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="operadores.html"><i
+                                class="fas fa-calculator me-1"></i> Operadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="condicionales.html"><i
+                                class="fas fa-random me-1"></i> Condicionales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bucles.html"><i class="fas fa-redo me-1"></i>
+                            Bucles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="funciones.html"><i
+                                class="fas fa-project-diagram me-1"></i> Funciones</a></li>
                 </ul>
             </div>
         </div>
@@ -45,25 +56,32 @@
     <main class="container my-5">
         <section>
             <h2 class="mb-4"><i class="fas fa-shapes me-2"></i>Introducción a los Tipos de Datos</h2>
-            <p>JavaScript es un lenguaje de tipado dinámico, lo que significa que las variables no están directamente asociadas a un tipo específico y pueden contener valores de cualquier tipo. Los tipos de datos definen las características de los valores con los que podemos trabajar en JavaScript.</p>
-            
+            <p>JavaScript es un lenguaje de tipado dinámico, lo que significa que las variables no están directamente
+                asociadas a un tipo específico y pueden contener valores de cualquier tipo. Los tipos de datos definen
+                las características de los valores con los que podemos trabajar en JavaScript.</p>
+
             <div class="note">
                 <h4><i class="fas fa-lightbulb me-2"></i>Tipado dinámico vs estático</h4>
-                <p>En lenguajes de tipado estático (como Java o C#), el tipo de variable se define al declararla y no puede cambiar. En JavaScript, una variable puede contener diferentes tipos de valores en diferentes momentos.</p>
+                <p>En lenguajes de tipado estático (como Java o C#), el tipo de variable se define al declararla y no
+                    puede cambiar. En JavaScript, una variable puede contener diferentes tipos de valores en diferentes
+                    momentos.</p>
             </div>
         </section>
 
         <section class="mt-5">
             <h2 class="mb-4"><i class="fas fa-list-ul me-2"></i>Tipos de Datos Primitivos</h2>
-            <p>Los tipos primitivos son valores inmutables (que no pueden ser modificados) y se pasan por valor (no por referencia).</p>
-            
+            <p>Los tipos primitivos son valores inmutables (que no pueden ser modificados) y se pasan por valor (no por
+                referencia).</p>
+
             <div class="row">
-                
+
                 <div class="col-md-6">
                     <div class="data-type-card h-100" style="border-left-color: #4dabf7;">
                         <div class="card-body">
-                            <h4 class="card-title"><i class="fas fa-quote-left type-icon" style="color: #4dabf7;"></i>String</h4>
-                            <p class="card-text">Representa datos textuales. Se pueden crear con comillas simples ('), dobles (") o backticks (`).</p>
+                            <h4 class="card-title"><i class="fas fa-quote-left type-icon"
+                                    style="color: #4dabf7;"></i>String</h4>
+                            <p class="card-text">Representa datos textuales. Se pueden crear con comillas simples ('),
+                                dobles (") o backticks (`).</p>
                             <div class="example-box">
                                 <pre><code>let nombre = "Juan";
 let mensaje = 'Hola mundo';
@@ -73,13 +91,15 @@ let plantilla = `Hola ${nombre}`;</code></pre>
                         </div>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="col-md-6">
                     <div class="data-type-card h-100" style="border-left-color: #20c997;">
                         <div class="card-body">
-                            <h4 class="card-title"><i class="fas fa-sort-numeric-up-alt type-icon" style="color: #20c997;"></i>Number</h4>
-                            <p class="card-text">Representa valores numéricos, incluyendo enteros y decimales. JavaScript usa el formato de 64 bits IEEE 754.</p>
+                            <h4 class="card-title"><i class="fas fa-sort-numeric-up-alt type-icon"
+                                    style="color: #20c997;"></i>Number</h4>
+                            <p class="card-text">Representa valores numéricos, incluyendo enteros y decimales.
+                                JavaScript usa el formato de 64 bits IEEE 754.</p>
                             <div class="example-box">
                                 <pre><code>let entero = 42;
 let decimal = 3.14;
@@ -89,13 +109,15 @@ let exponente = 2.998e8; // 2.998 × 10^8</code></pre>
                         </div>
                     </div>
                 </div>
-                
-               
+
+
                 <div class="col-md-6">
                     <div class="data-type-card h-100" style="border-left-color: #fd7e14;">
                         <div class="card-body">
-                            <h4 class="card-title"><i class="fas fa-check-circle type-icon" style="color: #fd7e14;"></i>Boolean</h4>
-                            <p class="card-text">Representa un valor lógico que puede ser <code>true</code> (verdadero) o <code>false</code> (falso).</p>
+                            <h4 class="card-title"><i class="fas fa-check-circle type-icon"
+                                    style="color: #fd7e14;"></i>Boolean</h4>
+                            <p class="card-text">Representa un valor lógico que puede ser <code>true</code> (verdadero)
+                                o <code>false</code> (falso).</p>
                             <div class="example-box">
                                 <pre><code>let esMayor = true;
 let tieneAcceso = false;
@@ -105,27 +127,32 @@ let resultado = 10 > 5; // true</code></pre>
                         </div>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="col-md-6">
                     <div class="data-type-card h-100" style="border-left-color: #868e96;">
                         <div class="card-body">
                             <h4 class="card-title"><i class="fas fa-ban type-icon" style="color: #868e96;"></i>Null</h4>
-                            <p class="card-text">Representa la ausencia intencional de cualquier valor objeto. Es un valor primitivo que representa "nada", "vacío" o "valor desconocido".</p>
+                            <p class="card-text">Representa la ausencia intencional de cualquier valor objeto. Es un
+                                valor primitivo que representa "nada", "vacío" o "valor desconocido".</p>
                             <div class="example-box">
                                 <pre><code>let usuario = null; // intencionalmente sin valor</code></pre>
                             </div>
-                            <p><strong>Nota:</strong> typeof null devuelve "object" (es un error histórico de JavaScript)</p>
+                            <p><strong>Nota:</strong> typeof null devuelve "object" (es un error histórico de
+                                JavaScript)</p>
                         </div>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="col-md-6">
                     <div class="data-type-card h-100" style="border-left-color: #9775fa;">
                         <div class="card-body">
-                            <h4 class="card-title"><i class="fas fa-question-circle type-icon" style="color: #9775fa;"></i>Undefined</h4>
-                            <p class="card-text">Una variable a la que no se le ha asignado valor tiene el valor <code>undefined</code>. También es el valor devuelto por funciones que no retornan nada.</p>
+                            <h4 class="card-title"><i class="fas fa-question-circle type-icon"
+                                    style="color: #9775fa;"></i>Undefined</h4>
+                            <p class="card-text">Una variable a la que no se le ha asignado valor tiene el valor
+                                <code>undefined</code>. También es el valor devuelto por funciones que no retornan nada.
+                            </p>
                             <div class="example-box">
                                 <pre><code>let variable;
 console.log(variable); // undefined
@@ -133,17 +160,20 @@ console.log(variable); // undefined
 function noRetorna() {}
 console.log(noRetorna()); // undefined</code></pre>
                             </div>
-                            <p><strong>Diferencia con null:</strong> undefined significa "no definido", null significa "definidamente nulo"</p>
+                            <p><strong>Diferencia con null:</strong> undefined significa "no definido", null significa
+                                "definidamente nulo"</p>
                         </div>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="col-md-6">
                     <div class="data-type-card h-100" style="border-left-color: #f783ac;">
                         <div class="card-body">
-                            <h4 class="card-title"><i class="fas fa-atom type-icon" style="color: #f783ac;"></i>Symbol</h4>
-                            <p class="card-text">Introducido en ES6, representa un identificador único. Útil para crear propiedades de objeto no enumerables.</p>
+                            <h4 class="card-title"><i class="fas fa-atom type-icon" style="color: #f783ac;"></i>Symbol
+                            </h4>
+                            <p class="card-text">Introducido en ES6, representa un identificador único. Útil para crear
+                                propiedades de objeto no enumerables.</p>
                             <div class="example-box">
                                 <pre><code>let id = Symbol("id");
 let user = {
@@ -151,17 +181,20 @@ let user = {
     [id]: 123 // no aparece en for...in
 };</code></pre>
                             </div>
-                            <p><strong>Característica:</strong> Cada Symbol() es único, incluso con la misma descripción</p>
+                            <p><strong>Característica:</strong> Cada Symbol() es único, incluso con la misma descripción
+                            </p>
                         </div>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="col-md-6">
                     <div class="data-type-card h-100" style="border-left-color: #40c057;">
                         <div class="card-body">
-                            <h4 class="card-title"><i class="fas fa-infinity type-icon" style="color: #40c057;"></i>BigInt</h4>
-                            <p class="card-text">Introducido en ES2020, representa números enteros de tamaño arbitrario. Se crea añadiendo 'n' al final del número.</p>
+                            <h4 class="card-title"><i class="fas fa-infinity type-icon"
+                                    style="color: #40c057;"></i>BigInt</h4>
+                            <p class="card-text">Introducido en ES2020, representa números enteros de tamaño arbitrario.
+                                Se crea añadiendo 'n' al final del número.</p>
                             <div class="example-box">
                                 <pre><code>const bigNum = 123456789012345678901234567890n;
 console.log(bigNum * 2n); // 246913578024691357802469135780n</code></pre>
@@ -175,8 +208,9 @@ console.log(bigNum * 2n); // 246913578024691357802469135780n</code></pre>
 
         <section class="mt-5">
             <h2 class="mb-4"><i class="fas fa-project-diagram me-2"></i>Tipo de Dato Object (No primitivo)</h2>
-            <p>Los objetos son colecciones de propiedades (pares clave-valor) y representan la estructura de datos más importante en JavaScript.</p>
-            
+            <p>Los objetos son colecciones de propiedades (pares clave-valor) y representan la estructura de datos más
+                importante en JavaScript.</p>
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4 h-100">
@@ -204,20 +238,22 @@ let regex = /ab+c/;       // RegExp</code></pre>
                     </div>
                 </div>
             </div>
-            
+
             <div class="warning">
                 <h4><i class="fas fa-exclamation-triangle me-2"></i>Diferencias clave entre primitivos y objetos</h4>
                 <ul>
-                    <li><strong>Paso por valor vs referencia:</strong> Los primitivos se copian por valor, los objetos por referencia</li>
+                    <li><strong>Paso por valor vs referencia:</strong> Los primitivos se copian por valor, los objetos
+                        por referencia</li>
                     <li><strong>Mutabilidad:</strong> Los primitivos son inmutables, los objetos pueden modificarse</li>
-                    <li><strong>Almacenamiento:</strong> Los primitivos se almacenan en la pila, los objetos en el heap</li>
+                    <li><strong>Almacenamiento:</strong> Los primitivos se almacenan en la pila, los objetos en el heap
+                    </li>
                 </ul>
             </div>
         </section>
 
         <section class="mt-5">
             <h2 class="mb-4"><i class="fas fa-tasks me-2"></i>Operaciones con Tipos</h2>
-            
+
             <h4 class="mt-3">Conversión de tipos (Type Coercion)</h4>
             <p>JavaScript realiza conversiones automáticas de tipos en ciertas operaciones:</p>
             <div class="example-box">
@@ -225,7 +261,7 @@ let regex = /ab+c/;       // RegExp</code></pre>
 let suma = "5" - 2;  // 3 (conversión a número)
 let booleano = !!0;  // false (conversión a boolean)</code></pre>
             </div>
-            
+
             <h4 class="mt-4">Comprobación de tipos</h4>
             <p>Formas de verificar el tipo de un valor:</p>
             <table class="table type-table">
@@ -257,8 +293,10 @@ let booleano = !!0;  // false (conversión a boolean)</code></pre>
         </section>
 
         <div class="d-flex justify-content-between mt-5">
-            <a href="sintaxis.html" class="btn btn-outline-primary"><i class="fas fa-arrow-left me-1"></i> Volver a Sintaxis Básica</a>
-            <a href="variables.html" class="btn btn-primary">Siguiente tema: Variables <i class="fas fa-arrow-right ms-1"></i></a>
+            <a href="sintaxis.html" class="btn btn-outline-primary"><i class="fas fa-arrow-left me-1"></i> Volver a
+                Sintaxis Básica</a>
+            <a href="variables.html" class="btn btn-primary">Siguiente tema: Variables <i
+                    class="fas fa-arrow-right ms-1"></i></a>
         </div>
     </main>
 
@@ -275,4 +313,5 @@ let booleano = !!0;  // false (conversión a boolean)</code></pre>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

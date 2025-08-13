@@ -23,17 +23,19 @@ header {
     padding: 2rem 0;
     color: var(--js-black);
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
     font-weight: bold;
-    color: #1a1a1a; /* Gris muy oscuro para contraste */
+    color: #1a1a1a;
+    /* Gris muy oscuro para contraste */
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
 }
 
 header p.lead {
-    color: #2c2c2c; /* Gris oscuro */
+    color: #2c2c2c;
+    /* Gris oscuro */
     font-size: 1.2rem;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
@@ -48,13 +50,13 @@ header p.lead {
     background-color: var(--js-black) !important;
 }
 
-.navbar-brand, 
+.navbar-brand,
 .nav-link {
     color: white !important;
     transition: color 0.3s;
 }
 
-.navbar-brand:hover, 
+.navbar-brand:hover,
 .nav-link:hover {
     color: var(--js-yellow) !important;
 }
@@ -75,13 +77,13 @@ header p.lead {
 /* Tarjetas */
 .card {
     border: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
 .card-title {
@@ -124,29 +126,72 @@ footer a:hover {
     .logo {
         height: 60px;
     }
-    
+
     header h1 {
         font-size: 1.8rem;
     }
-    
+
     header p {
         font-size: 1rem;
     }
 
     pre {
-            background-color: #1e1e1e;
-            /* Fondo oscuro */
-            color: #ffcc00;
-            /* Texto amarillo */
-            padding: 1rem;
-            border-radius: 6px;
-            overflow-x: auto;
-            font-family: "Fira Code", monospace;
-            font-size: 0.95rem;
-        }
+        background-color: #1e1e1e;
+        /* Fondo oscuro */
+        color: #ffcc00;
+        /* Texto amarillo */
+        padding: 1rem;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-family: "Fira Code", monospace;
+        font-size: 0.95rem;
+    }
 
-        code {
-            color: inherit;
-        }
+    code {
+        color: inherit;
+    }
+
+    :root {
+        --js-yellow: #f7df1e;
+        --js-black: #323330;
+        --js-gray: #f4f4f4;
+    }
+
+    body {
+        background-color: var(--js-gray);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+        background-color: var(--js-yellow) !important;
+        color: var(--js-black) !important;
+    }
+
+    .navbar {
+        background-color: var(--js-black) !important;
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+    }
+
+    .card {
+        border-radius: 12px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    pre {
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        padding: 1rem;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+
+    footer {
+        background-color: var(--js-black);
+        color: white;
+    }
+
 }
-
